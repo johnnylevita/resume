@@ -27,7 +27,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('resume.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
-    url(r'^rosetta/', include('rosetta.urls')),     
     url(r'^portugues/$', GeneratePDF.as_view(), name='portugues'),
     url(r'^ingles/$', InglesPDF.as_view(), name='ingles'),
     
